@@ -59,30 +59,5 @@ Traffic isn't constant — a real production system needs to survive both a quie
 
 ## 📸 Evidence
 
-*(Add your screenshots here)*
-- [ ] Two browser refreshes showing different instance IDs (load balancing proof)
-- [ ] ASG **Activity** tab showing a scale-out event
-- [ ] ASG **Activity** tab showing a scale-in event
-- [ ] CloudWatch CPU utilization graph showing the spike
-
-## 💡 Key Concepts Demonstrated
-
-- Elastic, demand-based infrastructure (vs. static over-provisioned servers)
-- Multi-AZ high availability
-- Load balancing & health checks
-- Infrastructure automation via Launch Templates and user-data bootstrapping
-- Cost-conscious cloud operations (full teardown to avoid idle charges)
-
-## 🛠️ Tech Stack
-
-`AWS EC2` `Application Load Balancer` `Auto Scaling Groups` `CloudWatch` `Amazon Linux 2023` `nginx` `Bash`
-
-## 🚀 What I'd Add Next
-
-- Automate this entire stack with **Terraform** or **CloudFormation** instead of the console (planned as part of continuing this bootcamp)
-- Add HTTPS via ACM + a custom domain
-- Push metrics/logs to a centralized dashboard
-
----
-
-*Part of my hands-on AWS learning journey — [cloudwithshad](https://github.com) cloud bootcamp.*
+![EC2 instances during Auto Scaling Group activity](screenshots/aws-ec2-instances-dashboard-7-instances-t3micro.jpeg)
+*EC2 console showing the ASG cycling instances — a mix of Running and Terminated states reflects scale-out and scale-in activity during load testing.*S learning journey — [cloudwithshad](https://github.com) cloud bootcamp.*
